@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#html {
+    margin: auto;
+    padding: 20px;
+    max-width: 900px;
+
+}
+a{
+    font-family: verdana;
+}
+/*Menu desplegable*/
+nav {
+    max-width: 1600px;
+    height: 90px;
+    margin: 0px;
+    background-color: black;
+    font-size: 23px;
+    margin-top: 0px;
+    justify-content: center;
+}
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+.menu-horizontal img{
+    padding: 0px
+    
+}
+
+.menu-horizontal > li:hover {
+    background-color: #204c9a;
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+.menu-vertical li:hover {
+    background-color: #204c9a;
+}
+
+.menu-vertical li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+}
+
+
+body{
+    background: #222222;
+}
+
+
+
+
+
+.seccion1{
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #222222;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.items{
+    width: 300px;
+    height: 350px;
+    background-color: black;
+    border-radius: 40px;
+    margin: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.items .img1{
+    margin: 10px;
+    width: 220px;
+    height: 220px;
+    background-image: url(imagenes/fotos.png);
+    background-size: cover;
+    border-radius: 0%;
+}
+.items .img2{
+    margin: 10px;
+    width: 220px;
+    height: 220px;
+    background-image: url(imagenes/video.png);
+    background-size: cover;
+    border-radius: 0%;
+}
+
+.items:hover{
+    opacity: 8;
+    background-color: #204c9a;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.numero{
+    font-size: 60px;
+    font-family: verdana;
+
+}

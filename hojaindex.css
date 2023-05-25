@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#html {
+    margin: auto;
+    padding: 20px;
+    max-width: 900px;
+
+}
+a{
+    font-family: verdana;
+}
+
+/*Menu desplegable*/
+nav {
+    max-width: 1600px;
+    height: 90px;
+    margin: 0px;
+    background-color: black;
+    font-size: 23px;
+    margin-top: 0px;
+    justify-content: center;
+}
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+.menu-horizontal img{
+    padding: 0px
+    
+}
+
+.menu-horizontal > li:hover {
+    background-color: #204c9a;
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+.menu-vertical li:hover {
+    background-color: #204c9a;
+}
+
+.menu-vertical li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+}
+
+.imagen-fondo img{
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+    height: auto;
+    width: 100%;
+}
+
+
+body{
+    background: #222222;
+}
+
+
+.seccion1{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: #222222;
+    justify-content: center;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.items{
+    width: 107px;
+    height: 107px;
+
+    border-radius: 40px;
+    margin: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.items .img1{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-image: url(imagenes/facebook.png);
+    background-size: cover;
+    border-radius: 200px;
+}
+.items .img2{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-image: url(imagenes/instagram.png);
+    background-size: cover;
+    border-radius: 200px;
+}
+.items .img3{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-image: url(imagenes/youtube.png);
+    background-size: cover;
+    border-radius: 200px;
+}
+.items .img4{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-image: url(imagenes/tiktok.png);
+    background-size: cover;
+    border-radius: 200px;
+}
+.items:hover{
+    opacity: 8;
+    background-color: #204c9a;
+    transition: 1s;
+    cursor: pointer;
+}
